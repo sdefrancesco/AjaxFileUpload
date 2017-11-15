@@ -1,0 +1,16 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
+
+a {
+  color: #00B7FF; }
+
+.hidden {
+  display: none; }
+
+.progress {
+  width: 300px; }
+  .progress #progress {
+    transition: .3s; }
+
+/*# sourceMappingURL=style.css.map */
