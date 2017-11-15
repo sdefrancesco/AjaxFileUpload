@@ -5,6 +5,21 @@ var input = document.getElementById('title')
 var progressContainer = document.querySelector('.progress')
 var progress = document.getElementById('progress')
 var area = document.querySelector('.area')
+var area2 = document.querySelector('.area2')
+
+file.addEventListener('change', function() {
+    var reader = new FileReader()
+    reader.onprogress = function() {
+        
+    }
+    reader.onloadend = function() {
+        var newImg = new Image()
+        newImg.src = reader.result
+        newImg.style.width = '100px'
+        area2.appendChild(newImg)
+    }
+    reader.readAsDataURL(this.files[0])
+})
 
 form.addEventListener('submit', function(e) {
     e.preventDefault()
